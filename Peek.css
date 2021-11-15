@@ -152,7 +152,7 @@ section::-webkit-scrollbar {
 }
 .rightarrow span {
   position: absolute;
-  top: 70%;
+  top: 80%;
   font-size: 60px;
   font-weight: bold;
   color: gray;
@@ -238,7 +238,7 @@ section::-webkit-scrollbar {
   .main h1 {
     font-size: 50px;
     margin-top: 80px;
-    margin-left: 100px;
+    margin-left: 80px;
     /* margin-right: 300px; */
   }
   .main .text-1 {
@@ -276,14 +276,14 @@ section::-webkit-scrollbar {
     margin-right: 5px;
   }
   .leftarrow span {
-    top: 58%;
+    top: 70%;
     font-size: 50px;
     left: 8%;
   }
   .rightarrow span {
-    top: 58%;
+    top: 70%;
     font-size: 50px;
-    right: 5%;
+    right: 4%;
   }
   .main-desc {
     margin-top: 70px;
