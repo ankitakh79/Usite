@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Gallary.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Infinity Labs: Scenes of the Solverse</h1>
+        <p>Below is a gallery of all 1111 unique scenes of the solverse NFTs by Infinity Labs, exclusively on the Solana blockchain. Scenes and their pre-merge timelines are available to purchase, available on Solanart, Alpha Art, FTX secondary markets.</p>
+    </div>
+    <div class="full-img" id="fullImgBox">
+        <img src="Img/0001.webp" alt="" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallary">
+        <div class="container">
+        <img src="Img/0001.webp" alt="" onclick="openFullImg(this.src)">
+        <span>0001</span>
+        </div>
+        <div class="container">
+        <img src="Img/0002.webp" alt="" onclick="openFullImg(this.src)">
+        <span>0002</span>
+        </div>
+        <div class="container">
+        <img src="Img/0003.webp" alt="" onclick="openFullImg(this.src)">
+        <span>0003</span>
+        </div>
+        <div class="container">
+        <img src="Img/0004.webp" alt="" onclick="openFullImg(this.src)">
+        <span>0004</span>
+        </div>
+        <div class="container">
+        <img src="Img/0005.webp" alt="" onclick="openFullImg(this.src)">
+        <span>0005</span>
+        </div>
+        <div class="container">
+        <img src="Img/0006.webp" alt="" onclick="openFullImg(this.src)">
+        <span>0006</span>
+        </div>
+        <div class="container">
+        <img src="Img/0007.webp" alt="" onclick="openFullImg(this.src)">
+        <span>0007</span>
+        </div>
+        <div class="container">
+        <img src="Img/0008.webp" alt="" onclick="openFullImg(this.src)">
+        <span>0008</span>
+        </div>
+        <div class="container">
+        <img src="Img/0009.webp" alt="" onclick="openFullImg(this.src)">
+        <span>0009</span>
+        </div>
+        <div class="container">
+        <img src="Img/0010.webp" alt="" onclick="openFullImg(this.src)">
+        <span>0010</span>
+        </div>
+        <div class="container">
+        <img src="Img/0011.webp" alt="" onclick="openFullImg(this.src)">
+        <span>0011</span>
+        </div>
+        <div class="container">
+        <img src="Img/0012.webp" alt="" onclick="openFullImg(this.src)">
+        <span>0012</span>
+        </div>
+
+    </div>
+</body>
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>
+</html>

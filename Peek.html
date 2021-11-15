@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peek</title>
+    <link rel="stylesheet" href="Peek.css">
+</head>
+<body onload="show()">
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img
+                src="logo.png"
+                alt="Logo"
+                width="40px"
+            />
+        </div>
+        <div>
+            <ul class="nav-list" id="navi-list">
+                <li class="nav-items"><a  href="">Blog</a></li>
+                <li class="nav-items"><a href="Peek.html"> Sneak Peek</a></li>
+                <li class="nav-items"><a href="Gallary.html"> Gallery</a></li>
+                <!-- <li class="nav-items"><a href="">Launch Video</a></li> -->
+                <div class="dropdown">
+                    <li class="nav-items" id="nav-item">
+                        <a href="">Purchase NFT</a>
+                          <div class="dropdown-content">
+                            <a href="https://jailapes.io/" >JailApes</a>
+                            <a href="https://paintswap.finance/" >PainSwap MarketPlace</a>
+                            <!-- <a href="#" >Magic Eden</a>
+                            <a href="#" >FTX</a>
+                            <a href="#" >Search By Scene #(All MarketPlaces)</a> -->
+                        </div>
+                      </li>
+                </div>
+            </ul>
+        </div>
+        <div>
+            <ul class="nav-list-btn" id="navi-list-btn">
+                <li class="nav-items-btn"><a href="https://discord.gg/JailApes"><button class="btn-1">Discord</button></a></li>
+                <li class="nav-items-btn"><a href="https://twitter.com/Yuji_Labs"><button class="btn-2">Twitter</button></a></li>
+                <li class="nav-items-btn"><a href="https://www.instagram.com/jailapes/"><button class="btn-2">Instagram</button></a></li>
+            </ul>
+        </div>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+
+        </div>
+    </div>
+
+
+
+
+<!-- content -->
+    <div class="main">
+        <h1>Sneak Peek</h1>
+        <p class="text-1">
+            Scenes from different corners of the Solverse 💫 Want to
+                  submit lore for your
+                  
+        </p>
+        <p class="text-2"> favorite scene, or a scene that you own?
+                  Submit</p>
+    </div>
+    <section>
+       
+        <div class="leftarrow" onclick="moveLeft()"><span>&#139</span></div>
+       
+        <div class="Main" id="con">
+            <div class="parent">
+            <div class="child" id="c1"><img src="Img/0001.webp" alt=""></div>
+            <div class="child" id="c2"><img src="Img/0002.webp" alt=""></div>
+            <div class="child" id="c3"><img src="Img/0003.webp" alt=""></div>
+            <div class="child" id="c4"><img src="Img/0004.webp" alt=""></div>
+            <div class="child" id="c5"><img src="Img/0005.webp" alt=""></div>
+            <div class="child" id="c6"><img src="Img/0006.webp" alt=""></div>
+            <div class="child" id="c7"><img src="Img/0007.webp" alt=""></div>
+            <div class="child" id="c8"><img src="Img/0008.webp" alt=""></div>
+            <div class="child" id="c9"><img src="Img/0009.webp" alt=""></div>
+            <div class="child" id="c10"><img src="Img/0010.webp" alt=""></div>
+            <div class="child" id="c11"><img src="Img/0011.webp" alt=""></div>
+            
+
+        </div> 
+        <div class="rightarrow" onclick="moveRight()"><span>&#155</span></div>
+    </div> 
+    </section>
+    <div class="main-desc">
+        <p>
+             <em
+                    >— 0.09.31.46.7 "Two koi, swimming together in a pond. No
+                    one knows how, or why, they came here. They have been
+                    together for over a million years, and will never leave each
+                    others side. They both know that one day, they will die
+                    together."<br /><br />— 1.36.32.43.1 "My father was a brave
+                    man, who died fighting the son of Cthulu, an evil god from
+                    my world. Before he died, he told me to find the magic sword
+                    that could kill him. I'm now on a journey to find the sword
+                    and defeat my father's murderer." <br /><br />— 7.41.33.43.8
+                    "Thousands of years ago, a mysterious force started taking
+                    over planets and stripping them of their resources. The
+                    planet's inhabitants put up a fight, but were no match for
+                    the invaders. They escaped the planet and went into hiding.
+                    Now they seek out warriors to help them fight back."</em
+                  ><br /><br /><em
+                    >— 5.09.31.46.3 "Captain Zoran has been on a mission to find
+                    the fabled tree of life for decades. He is getting old, and
+                    knows that if he does not find it soon, his crew will leave
+                    him. He is currently traveling to galaxy 12.93.48.5 to
+                    investigate reports of strange tree-like creatures that grow
+                    out of the ground there. He is hoping that these creatures
+                    will be the trees of life he has sought after for so
+                    long."</em
+                  ><br /><br /><em
+                    >— 8.19.78.44.5 "The angel Israfel was once one of the most
+                    celebrated of the celestial host, but his reputation has
+                    since fallen into infamy. His fall from grace is echoed in
+                    the story of his battle with another celestial guardian, the
+                    one who would come to be known as Metatron."</em
+                  >
+        </p>
+    </div>
+</body>
+<script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById('navi-list');
+    const naviListBtn = document.getElementById('navi-list-btn');
+
+    toggleButton.addEventListener('click',() => {
+        naviList.classList.toggle('active');
+        naviListBtn.classList.toggle('active');
+
+    })
+
+    //slider
+        var left = 1;
+        var right = 4;
+    function show(){
+        
+        for(i=left;i<=right;i++){
+        document.getElementById("c" + i).style.display = "inline-block"
+    }}
+    function moveRight(){
+        if(left <= 3 && right<= 7){
+        document.getElementById("c" + left).style.display = "none";
+        left+=1;
+        right+=1;
+        for(i=left;i<=right;i++){
+            document.getElementById("c" + i).style.display = "inline-block"
+        }}
+        else return;
+    }
+    function moveLeft(){
+        if(left >= 1 && right>= 5){
+        document.getElementById("c" + right).style.display = "none";
+        left-=1;
+        right-=1;
+        for(i=left;i<=right;i++){
+            document.getElementById("c" + i).style.display = "inline-block"
+        }}
+        else return;
+    }
+</script>
+</html>
